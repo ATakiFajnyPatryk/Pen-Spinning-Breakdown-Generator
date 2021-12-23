@@ -910,7 +910,7 @@ INSERT INTO hand_position (name, position) VALUES ('Fans', 'PD');
 
 ------------------------------------------------------ Rising Fans -----------------------------------------------------
 
-BEGIN insert_into_variant_with_f('Fans', 'Normal', 'Normal', 0, 0, 'Normal', 'P_Rising'); END;
+BEGIN insert_into_variant_with_f('Fans', 'Normal', 'Normal', 0, 0, 'None', 'P_Rising'); END;
 BEGIN insert_into_performance(1, 1.0, 2); END;
 BEGIN insert_into_finger_slots('34', '12'); END;
 BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
@@ -920,7 +920,7 @@ BEGIN insert_into_pen_positions('mid-high', 'mid-low'); END;
 
 ----------------------------------------------------- Falling Fans -----------------------------------------------------
 
-BEGIN insert_into_variant_with_f('Fans', 'Normal', 'Normal', 0, 0, 'Normal', 'P_Falling'); END;
+BEGIN insert_into_variant_with_f('Fans', 'Normal', 'Normal', 0, 0, 'None', 'P_Falling'); END;
 BEGIN insert_into_performance(1, 1.0, 2); END;
 BEGIN insert_into_finger_slots('12', '34'); END;
 BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
