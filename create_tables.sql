@@ -22,9 +22,11 @@ CREATE TABLE variant (
     -- If is_fingerless = 1, "FL" is added at the beginning of the trick's name.
     is_extended NUMBER(1, 0) NOT NULL CHECK (is_extended IN (0, 1)),
     -- If is_extended = 1, "Extended" is added at the beginning of the trick's name.
-    continuity VARCHAR(10) NOT NULL CHECK (continuity IN ('None', 'Continuous', 'Harmonic'))
+    continuity VARCHAR(10) NOT NULL CHECK (continuity IN ('None', 'Continuous', 'Harmonic')),
     -- If continuity is not equal to 'None', random number of repetitions will be added after trick's name.
     -- If continuity = 'Haromonic', "Harmonic" is also added at the end of the trick's name.
+    feature VARCHAR(15)
+    -- For example, feature may be equal to: NULL, 'Rise', 'Fall', 'Rising', 'Falling'.
 );
 
 CREATE TABLE performance (
