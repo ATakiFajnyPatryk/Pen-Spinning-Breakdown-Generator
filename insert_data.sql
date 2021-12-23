@@ -856,4 +856,96 @@ BEGIN insert_into_finger_slots('12', '12'); END;
 BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
 BEGIN insert_into_pen_positions('mid-high', 'mid-high'); END;
 
+--###################################################### CHARGE ######################################################--
+
+INSERT INTO trick (name, family, is_weird) VALUES ('Charge', 'Charge', 0);
+INSERT INTO hand_position (name, position) VALUES ('Charge', 'PU');
+INSERT INTO hand_position (name, position) VALUES ('Charge', 'PS');
+INSERT INTO hand_position (name, position) VALUES ('Charge', 'PD');
+
+-------------------------------------------------------- Charge --------------------------------------------------------
+
+BEGIN insert_into_variant('Charge', 'Normal', 'Normal', 0, 0, 'Continuous'); END;
+BEGIN insert_into_performance(1, 1.0, 1); END;
+BEGIN insert_into_finger_slots('12', '12'); END;
+BEGIN insert_into_finger_slots('23', '23'); END;
+BEGIN insert_into_finger_slots('34', '34'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-high'); END;
+
+----------------------------------------------------- Double Charge ----------------------------------------------------
+
+BEGIN insert_into_performance(2, 1.0, 2); END;
+
+----------------------------------------------------- Triple Charge ----------------------------------------------------
+
+BEGIN insert_into_performance(2, 1.0, 3); END;
+
+---------------------------------------------------- Charge Reverse ----------------------------------------------------
+
+BEGIN insert_into_variant('Charge', 'Reverse', 'Normal', 0, 0, 'Continuous'); END;
+BEGIN insert_into_performance(1, 1.0, 1); END;
+BEGIN insert_into_finger_slots('12', '12'); END;
+BEGIN insert_into_finger_slots('23', '23'); END;
+BEGIN insert_into_finger_slots('34', '34'); END;
+BEGIN insert_into_finger_slots('13', '13'); END;
+BEGIN insert_into_finger_slots('24', '24'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-high'); END;
+
+------------------------------------------------- Double Charge Reverse ------------------------------------------------
+
+BEGIN insert_into_performance(2, 1.0, 2); END;
+
+------------------------------------------------- Triple Charge Reverse ------------------------------------------------
+
+BEGIN insert_into_performance(2, 1.0, 3); END;
+
+--####################################################### FANS #######################################################--
+
+INSERT INTO trick (name, family, is_weird) VALUES ('Fans', 'Charge', 0);
+INSERT INTO hand_position (name, position) VALUES ('Fans', 'PU');
+INSERT INTO hand_position (name, position) VALUES ('Fans', 'PS');
+INSERT INTO hand_position (name, position) VALUES ('Fans', 'PD');
+
+------------------------------------------------------ Rising Fans -----------------------------------------------------
+
+BEGIN insert_into_variant_with_f('Fans', 'Normal', 'Normal', 0, 0, 'Normal', 'P_Rising'); END;
+BEGIN insert_into_performance(1, 1.0, 2); END;
+BEGIN insert_into_finger_slots('34', '12'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-low'); END;
+
+----------------------------------------------------- Falling Fans -----------------------------------------------------
+
+BEGIN insert_into_variant_with_f('Fans', 'Normal', 'Normal', 0, 0, 'Normal', 'P_Falling'); END;
+BEGIN insert_into_performance(1, 1.0, 2); END;
+BEGIN insert_into_finger_slots('12', '34'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-low'); END;
+
+-------------------------------------------------- Rising Fans Harmonic ------------------------------------------------
+
+BEGIN insert_into_variant_with_f('Fans', 'Normal', 'Normal', 0, 0, 'Harmonic', 'P_Rising'); END;
+BEGIN insert_into_performance(1, 1.0, 3); END;
+BEGIN insert_into_finger_slots('34', '34'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-low'); END;
+
+-------------------------------------------------- Falling Fans Harmonic -----------------------------------------------
+
+BEGIN insert_into_variant_with_f('Fans', 'Normal', 'Normal', 0, 0, 'Harmonic', 'P_Falling'); END;
+BEGIN insert_into_performance(1, 1.0, 3); END;
+BEGIN insert_into_finger_slots('12', '12'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-low'); END;
+
 COMMIT;
