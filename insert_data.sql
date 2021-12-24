@@ -51,7 +51,10 @@ END;
   -- Twisted Sonic
   -- Warped Sonic
   -- Angel's Sonic
-  -- Demons's Sonic
+  -- Demon's Sonic
+  -- Charge
+  -- Fans
+  -- Pass
 
 --###################################################### Sonic #######################################################--
 
@@ -943,6 +946,41 @@ BEGIN insert_into_pen_positions('mid-high', 'mid-low'); END;
 BEGIN insert_into_variant_with_f('Fans', 'Normal', 'Normal', 0, 0, 'Harmonic', 'P_Falling'); END;
 BEGIN insert_into_performance(1, 1.0, 3); END;
 BEGIN insert_into_finger_slots('12', '12'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-low'); END;
+
+--####################################################### PASS #######################################################--
+
+INSERT INTO trick (name, family, is_weird) VALUES ('Pass', 'Fingerpass', 0);
+INSERT INTO hand_position (name, position) VALUES ('Pass', 'PU');
+INSERT INTO hand_position (name, position) VALUES ('Pass', 'PS');
+INSERT INTO hand_position (name, position) VALUES ('Pass', 'PD');
+
+--------------------------------------------------------- Pass ---------------------------------------------------------
+
+BEGIN insert_into_variant('Pass', 'Normal', 'Normal', 0, 0, 'None'); END;
+BEGIN insert_into_performance(1, 1.0, 1); END;
+BEGIN insert_into_finger_slots('34', '23'); END;
+BEGIN insert_into_finger_slots('34', '12'); END;
+BEGIN insert_into_finger_slots('34', '24'); END;
+BEGIN insert_into_finger_slots('23', '12'); END;
+BEGIN insert_into_finger_slots('23', '12'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-low', 'mid-high'); END;
+BEGIN insert_into_pen_positions('mid-high', 'mid-low'); END;
+
+----------------------------------------------------- Pass Reverse -----------------------------------------------------
+
+BEGIN insert_into_variant('Pass', 'Reverse', 'Normal', 0, 0, 'None'); END;
+BEGIN insert_into_performance(1, 1.0, 1); END;
+BEGIN insert_into_finger_slots('12', '23'); END;
+BEGIN insert_into_finger_slots('12', '34'); END;
+BEGIN insert_into_finger_slots('12', '24'); END;
+BEGIN insert_into_finger_slots('23', '34'); END;
+BEGIN insert_into_finger_slots('13', '34'); END;
 BEGIN insert_into_pen_positions('mid-low', 'mid-low'); END;
 BEGIN insert_into_pen_positions('mid-high', 'mid-high'); END;
 BEGIN insert_into_pen_positions('mid-low', 'mid-high'); END;
