@@ -10,7 +10,16 @@ CREATE OR REPLACE PROCEDURE new_slots(beg_slot_p VARCHAR2, end_slot_p VARCHAR2, 
     last_id variant.id%TYPE;
 BEGIN
     SELECT MAX(id) INTO last_id FROM variant;
-    INSERT INTO slots (id, beg_slot, end_slot, normality) VALUES (last_id, beg_slot_p, end_slot_p, normality_p);
+    INSERT INTO slots (id, beg_slot, mid_slot, end_slot, normality) VALUES (last_id, beg_slot_p, NULL, end_slot_p, normality_p);
+    COMMIT;
+END;
+/
+
+CREATE OR REPLACE PROCEDURE new_slots_with_mid(beg_slot_p VARCHAR2, mid_slot_p VARCHAR2, end_slot_p VARCHAR2, normality_p VARCHAR2) IS
+    last_id variant.id%TYPE;
+BEGIN
+    SELECT MAX(id) INTO last_id FROM variant;
+    INSERT INTO slots (id, beg_slot, mid_slot, end_slot, normality) VALUES (last_id, beg_slot_p, mid_slot_p, end_slot_p, normality_p);
     COMMIT;
 END;
 /

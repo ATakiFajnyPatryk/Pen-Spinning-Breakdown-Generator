@@ -97,11 +97,11 @@ BEGIN new_hand_orientation ('PS', 'Normal'); END;
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 BEGIN new_hand_orientation ('BS', 'Weird'); END;
 
-BEGIN new_slots('12', '23', 'Normal'); END;
-BEGIN new_slots('23', '34', 'Normal'); END;
-BEGIN new_slots('12', '34', 'Weird'); END;
-BEGIN new_slots('12', '24', 'Weird'); END;
-BEGIN new_slots('13', '34', 'Weird'); END;
+BEGIN new_slots_with_mid('12', '23', '12', 'Normal'); END;
+BEGIN new_slots_with_mid('23', '34', '23', 'Normal'); END;
+BEGIN new_slots_with_mid('12', '34', '12', 'Weird'); END;
+BEGIN new_slots_with_mid('12', '24', '12', 'Weird'); END;
+BEGIN new_slots_with_mid('13', '34', '13', 'Weird'); END;
 
 BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
@@ -125,11 +125,11 @@ BEGIN new_hand_orientation ('PS', 'Normal'); END;
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 BEGIN new_hand_orientation ('BS', 'Weird'); END;
 
-BEGIN new_slots('23', '12', 'Normal'); END;
-BEGIN new_slots('34', '23', 'Normal'); END;
-BEGIN new_slots('34', '12', 'Weird'); END;
-BEGIN new_slots('24', '12', 'Weird'); END;
-BEGIN new_slots('34', '13', 'Weird'); END;
+BEGIN new_slots_with_mid('23', '12', '23', 'Normal'); END;
+BEGIN new_slots_with_mid('34', '23', '34', 'Normal'); END;
+BEGIN new_slots_with_mid('34', '12', '34', 'Weird'); END;
+BEGIN new_slots_with_mid('24', '12', '24', 'Weird'); END;
+BEGIN new_slots_with_mid('34', '13', '34', 'Weird'); END;
 
 BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
@@ -199,7 +199,7 @@ BEGIN new_hand_orientation ('PS', 'Normal'); END;
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 BEGIN new_hand_orientation ('BS', 'Weird'); END;
 
-BEGIN new_slots('34', '12', 'Normal'); END;
+BEGIN new_slots_with_mid('34', '12', '34', 'Normal'); END;
 
 BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
@@ -223,7 +223,7 @@ BEGIN new_hand_orientation ('PS', 'Normal'); END;
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 BEGIN new_hand_orientation ('BS', 'Weird'); END;
 
-BEGIN new_slots('12', '34', 'Normal'); END;
+BEGIN new_slots_with_mid('12', '34', '12', 'Normal'); END;
 
 BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;

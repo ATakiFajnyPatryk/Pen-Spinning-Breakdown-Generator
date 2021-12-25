@@ -6,6 +6,16 @@
     <script-file value="$PROJECT_DIR$/tricks/sonic.sql" />
     <script-file value="$PROJECT_DIR$/tricks/twisted_sonic.sql" />
     <script-file value="$PROJECT_DIR$/tricks/warped_sonic.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/angels_sonic.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/demons_sonic.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/pass.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/finger_pass.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/triangle_pass.sql" />
+    <script-file value="$PROJECT_DIR$/insert_replaceable_slots.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/charge.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/rising_fans.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/falling_fans.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/thumb_around.sql" />
     <script-mode>FILE</script-mode>
     <data-source id="b2e87c94-9c02-436e-b807-70a52c5c6503" />
     <method v="2" />

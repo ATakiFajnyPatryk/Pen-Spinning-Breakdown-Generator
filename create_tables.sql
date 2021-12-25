@@ -1,3 +1,4 @@
+DROP TABLE replaceable_slots;
 DROP TABLE pen_positions;
 DROP TABLE slots;
 DROP TABLE hand_orientation;
@@ -42,11 +43,16 @@ CREATE TABLE pen_positions (
 
 CREATE TABLE slots (
     id NUMBER(6, 0) NOT NULL REFERENCES variant (id),
-    beg_slot VARCHAR(2) NOT NULL
-        CHECK (beg_slot IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF', 'P', 'B')),
-    end_slot VARCHAR(2)
-        CHECK (end_slot IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF', 'P', 'B')),
-    -- end_slot = NULL if pen does not change slots during execution of the trick
+    beg_slot VARCHAR(3) NOT NULL CHECK (beg_slot IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF',
+                                                     'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34')),
+    mid_slot VARCHAR(3) CHECK (mid_slot IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF',
+                                                     'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34')),
+    end_slot VARCHAR(3) CHECK (end_slot IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF',
+                                            'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34')),
+    -- end_slot = NULL and mid_slot = NULL if pen does not change slots during execution of the trick (trick is still)
+    -- mid_slot is not equal to NULL if trick is harmonic or similar (trick goes from one slot to another and then goes
+      -- back), for example Sonic Harmonic 23-12 is equal to Sonic 23-12 > Sonic Reverse 12-23 so beg_slot and end_slot
+      -- are both equal to 23, but we need mid_slot to store value 12 so we can write "Sonic Harmonic 23-12" properly
     normality VARCHAR2(6) NOT NULL CHECK (normality IN ('Normal', 'Weird'))
 );
 
@@ -54,6 +60,13 @@ CREATE TABLE hand_orientation (
     id NUMBER(6, 0) NOT NULL REFERENCES variant (id),
     orientation CHAR(2) NOT NULL CHECK (orientation IN ('PU', 'PS', 'PD', 'BS')),
     normality VARCHAR2(6) NOT NULL CHECK (normality IN ('Normal', 'Weird'))
+);
+
+CREATE TABLE replaceable_slots (
+    slot_from VARCHAR(3) NOT NULL CHECK (slot_from IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF',
+                                                       'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34')),
+    slot_to VARCHAR(3) NOT NULL CHECK (slot_to IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF',
+                                                   'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34'))
 );
 
 DROP SEQUENCE variant_id_seq;
