@@ -9,7 +9,7 @@ BEGIN new_variant('Middle Backaround', 'Arounds & Spins', 2); END;
 BEGIN new_hand_orientation ('PS', 'Normal'); END;
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 
-BEGIN new_slots('23', 23, 'Normal'); END;
+BEGIN new_slots('23', '23', 'Normal'); END;
 
 BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;

@@ -71,7 +71,7 @@ BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
 
 --------------------------------------------- Moonwalk Falling Fans Harmonic --------------------------------------------
 
-BEGIN new_variant('Rising Fans', 'Sonics & Charges', 4); END;
+BEGIN new_variant('Falling Fans', 'Sonics & Charges', 4); END;
 
 BEGIN new_modification('Harmonic'); END;
 BEGIN new_modification('Moonwalk'); END;

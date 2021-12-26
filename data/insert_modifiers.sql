@@ -48,3 +48,5 @@ INSERT INTO modifier (name, type, acronym, priority) VALUES ('3.5', 'Spins', NUL
 INSERT INTO modifier (name, type, acronym, priority) VALUES ('4.0', 'Spins', NULL, 0);
 INSERT INTO modifier (name, type, acronym, priority) VALUES ('4.5', 'Spins', NULL, 0);
 INSERT INTO modifier (name, type, acronym, priority) VALUES ('5.0', 'Spins', NULL, 0);
+
+COMMIT;
