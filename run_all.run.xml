@@ -16,6 +16,11 @@
     <script-file value="$PROJECT_DIR$/tricks/rising_fans.sql" />
     <script-file value="$PROJECT_DIR$/tricks/falling_fans.sql" />
     <script-file value="$PROJECT_DIR$/tricks/thumb_around.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/index_around.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/middle_around.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/pinky_around.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/index_backaround.sql" />
+    <script-file value="$PROJECT_DIR$/tricks/middle_backaround.sql" />
     <script-mode>FILE</script-mode>
     <data-source id="b2e87c94-9c02-436e-b807-70a52c5c6503" />
     <method v="2" />
