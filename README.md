@@ -26,7 +26,7 @@ Każdy wariant może być wykonywany w kilku (od 1 do 4, bo tylko 4 są) pozycja
 
 Podczas wykonywania trików długopis może być w różnym położeniu wewnątrz slota. Na przykład, jeśli trzymamy długopis między dwoma palcami, możemy dotykać jego środek, ale możemy też dotykać go bliżej brzegu. Każdy wariant może być wykonywany w różnych kombinacjach pozycji długopisu (execution_hand_positions). Każda taka kombinacja składa się z pozycja początkowej długopisu (beg_position) i pozycji końcowej długopisu (end_position). Żeby kombinacja trików miała sens, pozycja początkowa długopisu każdego niepierwszego wariantu triku musi być równa pozycji końcowej długopisu poprzedniego wariantu. Później wyjaśniam, jak definiuję pozycję długopisu.
 
-Klasy execution_slots, execution_hand_orientation, execution_hand_position to tak naprawdę związki między klasą variant a innymi klasami (dlatego też wyróżniłem je zielonym kolorem). Są to związki sparametryzowane parametrem normality, określającym czy dany związek jest normalny czy dziwny (ale nadal sensowny), czyli czy na przykład wykonanie danego wariantu w danej kombinacji slotów jest normalne czy dziwne.
+Klasy execution_slots, execution_hand_orientation, execution_pen_positions to tak naprawdę związki między klasą variant a innymi klasami (dlatego też wyróżniłem je zielonym kolorem). Są to związki sparametryzowane parametrem normality, określającym czy dany związek jest normalny czy dziwny (ale nadal sensowny), czyli czy na przykład wykonanie danego wariantu w danej kombinacji slotów jest normalne czy dziwne.
 
 ### Uwagi do modelu DDL - pliku create_tables.sql
 
