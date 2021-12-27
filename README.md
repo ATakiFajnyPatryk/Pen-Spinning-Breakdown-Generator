@@ -36,6 +36,8 @@ Tabela slots realizuje związek execution_slots z diagramu UML, a sama klasa slo
 
 Tabela variant_in_combo realizuje klasę combo z diagramu UML i związek tej klasy z klasą variant. Atrybuty combo_id i variant_id pozwalają stwierdzić, do której kombinacji należy i którym warientem jest dany rekord w tej tabeli. Parametr position oznacza pozycję wariantu w kombinacji, czyli którym z kolei warientem do wykonania jest dany wariant.
 
+Wszystkie tabele są w BCNF. Tabele są tak dobrane i model świata jest tak skonstruwany, że nie ma zależności funkcyjnych nie wynikających z nadkluczy.
+
 ### Uwagi do pozostałych plików sql
 
 Pozostałe pliki nie są istotne koncepcyjnie, realizują jedynie żmudny proces dodawania rekordów. Nie ma więc dużej potrzeby ich analizowania.
