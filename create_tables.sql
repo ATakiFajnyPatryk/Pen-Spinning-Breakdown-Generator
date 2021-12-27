@@ -1,4 +1,4 @@
-DROP TABLE trick_in_combo;
+DROP TABLE variant_in_combo;
 DROP TABLE replaceable_slots;
 DROP TABLE pen_positions;
 DROP TABLE slots;
@@ -49,7 +49,8 @@ CREATE TABLE slots (
                                                      'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34')),
     end_slot VARCHAR(3) CHECK (end_slot IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF',
                                             'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34')),
-    normality VARCHAR2(6) NOT NULL CHECK (normality IN ('Normal', 'Weird'))
+    normality VARCHAR2(6) NOT NULL CHECK (normality IN ('Normal', 'Weird')),
+    CONSTRAINT mid_exists_only_if_end_exists CHECK (end_slot IS NOT NULL OR mid_slot IS NULL)
 );
 
 CREATE TABLE hand_orientation (
@@ -65,7 +66,7 @@ CREATE TABLE replaceable_slots (
                                                    'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34'))
 );
 
-CREATE TABLE trick_in_combo (
+CREATE TABLE variant_in_combo (
     combo_id NUMBER(6, 0) NOT NULL,
     variant_id NUMBER(6, 0) NOT NULL REFERENCES variant,
     position NUMBER(2, 0) NOT NULL,
