@@ -48,6 +48,8 @@ W pliku data/insert_modifiers.sql wypełniamy tabelę modifier, a w pliku data/i
 
 W folderze data/tricks znajdują się pliki dodające dane o trikach i ich wariantach. Nie polecam ich analizować, bo są bardzo długie i nieciekawe, a poza tym to i tak dopiero początek. Ostatecznie w projekcie będą setki wariantów trików a wszystkich rekordów 5-10 tysięcy.
 
+Wszystkie te pliki mogą się jeszcze znacząco zmienić.
+
 ### Świat w projekcie a świat prawdziwy
 
 Oczywiście świat stworzony przeze mnie na potrzebę projektu jest nieco uproszczony. Przykładowo z diagramu UML wynika, że trudność wariantu nie zależy od slotów, pozycji dłoni i pozycji długopisu, co jest prawdą jedynie w całkiem dobrym przybliżeniu. Nie jest też tak, że trudności wariantów w kombinacji są niezależne. Pewien wariant może być trudniejszy do wykonania po jakimś innym wariancie niż normalnie. Można by wypisać więcej podobnych założeń i uproszczeń. Nie ma jednak potrzeby się w nie zagłębiać, bo nie wpłyną one znacząco na jakość generowanych kombinacji. Wystarczy zdawać sobię sprawę, że takie założenia i uproszczenia są i być muszą, ponieważ inaczej projekt stałby się zbyt skomplikowany. Starałem się opisać świat trików pen spinningowych za pomocą tabel tak, żeby uzyskać sensowne i niezbyt skomplikowane tabele z sensownymi zależnościami, jednocześnie tracąc jak najmniej szczegółów z prawdziwego świata i myślę, że wyszło mi to wystarczająco dobrze.
