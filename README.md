@@ -12,7 +12,7 @@ W pen spinningu powszechnie używa się angielskich nazw do wszystkiego i zmieni
 
 ### Uwagi do diagramu UML i opis świata pojawiającego się w projekcie
 
-Diagram UML jest oczywiście pojęciowy, więc struktura klas znacząco różni się od tej w DDL. Stronę, w którą zachodzą związki określam znakami: (>), (<), (^), (v), gdzie związek zachodzi w stronę dziubka znaku.
+Diagram UML jest oczywiście pojęciowy, więc struktura klas znacząco różni się od tej w DDL. Stronę, w którą zachodzą związki określam znakami: (>), (<), (^), (v), gdzie związek zachodzi w stronę czubka znaku.
 
 Spójrzmy najpierw na klasę trick. Trik ma nazwę, czasem ma również skróconą nazwę (acronym) i jest normalny lub dziwny, co opisuje pole normality. Trik może mieć wiele wariantów wykonania (variant). Można o tym myśleć tak, że trik to pojęcie ogólne, a wariant to pojęcie dokładnie określone. W moim nazewnictwie trikiem jest na przykład Sonic, a wariantami tego triku są Sonic, Sonic Reverse, Inverse Sonic Harmonic itp.
 
