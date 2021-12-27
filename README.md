@@ -1,7 +1,5 @@
 # Pen-Spinning-Breakdown-Generator
 
-### Przypomnienie
-
 Przypominam, że głównym celem projektu jest stworzenie generatora kombinacji trików pen spinningowych. Podaję również link do dość obszernej ksiązki (licencjonowanej Creative Commons) o pen spinningu. Gdy będę poniżej coś wyjaśniał, czasem podam numer strony/rozdziału w tej książce, gdzie można znaleźć dokładniejsze informacje.
 
 https://drive.google.com/file/d/1TlDb1H5bRnZZdswmdr07m-58yxs4Es7-/view
