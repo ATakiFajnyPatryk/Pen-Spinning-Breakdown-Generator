@@ -36,7 +36,7 @@ Tabela pen_positions realizuje związek execution_pen_positions z diagramu UML, 
 
 Tabela slots realizuje związek execution_slots z diagramu UML, a sama klasa slot nie jest potrzebna. Tabela replaceable_slots realizuje związek 'is replaceable with'. Tabela hand_orientation realizuje związek execution_hand_orientation, a sama klasa hand_orientation z diagramu UML nie jest potrzebna.
 
-Tabela variant_in_combo realizuje klasę combo z diagramu UML i związek tej klasy z klasą variant. Atrybuty combo_id i variant_id pozwalają stwierdzić, do której kombinacji należy i którym warientem jest dany rekord w tej klasie. Parametr position oznacza pozycję wariantu w kombinacji, czyli którym z kolei warientem do wykonania jest dany wariant.
+Tabela variant_in_combo realizuje klasę combo z diagramu UML i związek tej klasy z klasą variant. Atrybuty combo_id i variant_id pozwalają stwierdzić, do której kombinacji należy i którym warientem jest dany rekord w tej tabeli. Parametr position oznacza pozycję wariantu w kombinacji, czyli którym z kolei warientem do wykonania jest dany wariant.
 
 ### Uwagi do pozostałych plików sql
 
