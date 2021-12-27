@@ -38,7 +38,7 @@ Klasa trick_in_combo realizuje klasę combo z diagramu UML i związek tej klasy 
 
 ### Uwagi do pozostałych plików sql
 
-Pozostałe pliki są istotne koncepcyjnie, realizują jedynie żmudny proces dodawania rekordów.
+Pozostałe pliki nie są istotne koncepcyjnie, realizują jedynie żmudny proces dodawania rekordów.
 
 W pliku create_insertion_helpers.sql zdefiniowane są funkcję ułatwiające insertowanie danych. Skracają one kod i czynią go bardziej przejrzystym. Ich użycie polega na tym, że najpierw dodajemy nowy wariant funkcją new_variant, a potem z pomocą pozostałych funkcji dodajemy wszystkie rekordy klas modifier, slots, hand_orientation, pen_position mających referencję do tego wariantu. Są one potrzebne, bo jakoś musimy poznać wartość id nowego variantu, który jest auto-increment.
 
