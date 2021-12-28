@@ -1,6 +1,6 @@
 --##################################################### I-SONIC ######################################################--
 
-INSERT INTO trick (name, acronym, normality) VALUES ('Sonic', NULL, 'Normal');
+INSERT INTO trick (name, acronym, normality) VALUES ('I-Sonic', NULL, 'Normal');
 
 ------------------------------------------------------- I-Sonic --------------------------------------------------------
 
