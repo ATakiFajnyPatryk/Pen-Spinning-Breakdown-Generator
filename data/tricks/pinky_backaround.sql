@@ -6,7 +6,6 @@ INSERT INTO trick (name, acronym, normality) VALUES ('Pinky Backaround', 'Pinky 
 
 BEGIN new_variant('Pinky Backaround', 'Arounds & Spins', 3); END;
 
-BEGIN new_hand_orientation ('PS', 'Normal'); END;
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 
 BEGIN new_slots('34', '34', 'Normal'); END;
@@ -21,7 +20,6 @@ BEGIN new_variant('Pinky Backaround', 'Arounds & Spins', 3); END;
 
 BEGIN new_modification('Reverse'); END;
 
-BEGIN new_hand_orientation ('PS', 'Normal'); END;
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 
 BEGIN new_slots('34', '34', 'Normal'); END;
@@ -36,7 +34,6 @@ BEGIN new_variant('Pinky Backaround', 'Arounds & Spins', 4); END;
 
 BEGIN new_modification('Continuous'); END;
 
-BEGIN new_hand_orientation ('PS', 'Normal'); END;
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 
 BEGIN new_slots('34', '34', 'Normal'); END;
@@ -52,7 +49,6 @@ BEGIN new_variant('Pinky Backaround', 'Arounds & Spins', 4); END;
 BEGIN new_modification('Reverse'); END;
 BEGIN new_modification('Continuous'); END;
 
-BEGIN new_hand_orientation ('PS', 'Normal'); END;
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 
 BEGIN new_slots('34', '34', 'Normal'); END;
@@ -67,7 +63,6 @@ BEGIN new_variant('Pinky Backaround', 'Arounds & Spins', 3); END;
 
 BEGIN new_modification('Harmonic'); END;
 
-BEGIN new_hand_orientation ('PS', 'Normal'); END;
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 
 BEGIN new_slots('34', '34', 'Normal'); END;
@@ -83,7 +78,6 @@ BEGIN new_variant('Pinky Backaround', 'Arounds & Spins', 3); END;
 BEGIN new_modification('Harmonic'); END;
 BEGIN new_modification('Reverse'); END;
 
-BEGIN new_hand_orientation ('PS', 'Normal'); END;
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 
 BEGIN new_slots('34', '34', 'Normal'); END;
