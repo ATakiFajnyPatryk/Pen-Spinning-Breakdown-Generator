@@ -11,9 +11,9 @@ INSERT INTO modifier (name, type, acronym, priority) VALUES ('Aerial', 'Prefix',
 INSERT INTO modifier (name, type, acronym, priority) VALUES ('Isolated', 'Prefix', NULL, 7);
 INSERT INTO modifier (name, type, acronym, priority) VALUES ('Extended', 'Prefix', 'Ext', 8);
 INSERT INTO modifier (name, type, acronym, priority) VALUES ('Continuous', 'Prefix', 'Cont', 9);
-INSERT INTO modifier (name, type, acronym, priority) VALUES ('Double', 'Prefix', NULL, 0);
-INSERT INTO modifier (name, type, acronym, priority) VALUES ('Triple', 'Prefix', NULL, 0);
-INSERT INTO modifier (name, type, acronym, priority) VALUES ('Quadruple', 'Prefix', NULL, 0);
+INSERT INTO modifier (name, type, acronym, priority) VALUES ('Double', 'Prefix', NULL, 20);
+INSERT INTO modifier (name, type, acronym, priority) VALUES ('Triple', 'Prefix', NULL, 20);
+INSERT INTO modifier (name, type, acronym, priority) VALUES ('Quadruple', 'Prefix', NULL, 20);
 INSERT INTO modifier (name, type, acronym, priority) VALUES ('Curled', 'Prefix', NULL, 10);
 INSERT INTO modifier (name, type, acronym, priority) VALUES ('Palm', 'Prefix', NULL, 11);
 INSERT INTO modifier (name, type, acronym, priority) VALUES ('Side', 'Prefix', NULL, 12);
