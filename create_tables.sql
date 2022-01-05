@@ -9,14 +9,14 @@ DROP TABLE variant;
 DROP TABLE trick;
 
 CREATE TABLE trick (
-    name VARCHAR2(20) PRIMARY KEY,
+    name VARCHAR2(25) PRIMARY KEY,
     acronym VARCHAR2(15) UNIQUE,
     normality VARCHAR2(6) NOT NULL CHECK (normality IN ('Normal', 'Weird'))
 );
 
 CREATE TABLE variant (
     id NUMBER(6, 0) PRIMARY KEY, -- auto-increment
-    name VARCHAR2(20) NOT NULL REFERENCES trick (name),
+    name VARCHAR2(25) NOT NULL REFERENCES trick (name),
     family VARCHAR2(20),
     difficulty NUMBER(1, 0) NOT NULL CHECK (difficulty >= 1 AND difficulty <= 5)
 );
