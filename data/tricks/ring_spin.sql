@@ -52,6 +52,7 @@ BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
 BEGIN new_variant('Ring Spin', 'Arounds & Spins', 3); END;
 
 BEGIN new_modification('1.5'); END;
+BEGIN new_modification('Reverse'); END;
 
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 
@@ -67,6 +68,7 @@ BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
 BEGIN new_variant('Ring Spin', 'Arounds & Spins', 4); END;
 
 BEGIN new_modification('2.0'); END;
+BEGIN new_modification('Reverse'); END;
 
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 
@@ -82,6 +84,7 @@ BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
 BEGIN new_variant('Ring Spin', 'Arounds & Spins', 4); END;
 
 BEGIN new_modification('2.5'); END;
+BEGIN new_modification('Reverse'); END;
 
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 
