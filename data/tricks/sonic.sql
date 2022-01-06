@@ -525,3 +525,102 @@ BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
+
+------------------------------------------------------ Sonic Bust ------------------------------------------------------
+
+BEGIN new_variant('Sonic', 'Arounds & Spins', 3); END;
+
+BEGIN new_modification('Bust'); END;
+
+BEGIN new_hand_orientation ('PD', 'Normal'); END;
+
+BEGIN new_slots('23', '12', 'Normal'); END;
+BEGIN new_slots('34', '23', 'Normal'); END;
+BEGIN new_slots('34', '12', 'Weird'); END;
+
+BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+
+-------------------------------------------------- Sonic Double Bust ---------------------------------------------------
+
+BEGIN new_variant('Sonic', 'Arounds & Spins', 4); END;
+
+BEGIN new_modification('Double Bust'); END;
+
+BEGIN new_hand_orientation ('PD', 'Normal'); END;
+
+BEGIN new_slots('23', '12', 'Normal'); END;
+BEGIN new_slots('34', '23', 'Normal'); END;
+BEGIN new_slots('34', '12', 'Weird'); END;
+
+BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+
+-------------------------------------------------- Sonic Triple Bust ---------------------------------------------------
+
+BEGIN new_variant('Sonic', 'Arounds & Spins', 4); END;
+
+BEGIN new_modification('Triple Bust'); END;
+
+BEGIN new_hand_orientation ('PD', 'Normal'); END;
+
+BEGIN new_slots('23', '12', 'Normal'); END;
+BEGIN new_slots('34', '23', 'Normal'); END;
+BEGIN new_slots('34', '12', 'Weird'); END;
+
+BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+
+-------------------------------------------------- Sonic Bust Reverse --------------------------------------------------
+
+BEGIN new_variant('Sonic', 'Arounds & Spins', 3); END;
+
+BEGIN new_modification('Bust'); END;
+BEGIN new_modification('Reverse'); END;
+
+BEGIN new_hand_orientation ('PD', 'Normal'); END;
+
+BEGIN new_slots('12', '23', 'Normal'); END;
+BEGIN new_slots('23', '34', 'Normal'); END;
+BEGIN new_slots('12', '34', 'Weird'); END;
+
+BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+
+---------------------------------------------- Sonic Double Bust Reverse -----------------------------------------------
+
+BEGIN new_variant('Sonic', 'Arounds & Spins', 4); END;
+
+BEGIN new_modification('Double Bust'); END;
+BEGIN new_modification('Reverse'); END;
+
+BEGIN new_hand_orientation ('PD', 'Normal'); END;
+
+BEGIN new_slots('12', '23', 'Normal'); END;
+BEGIN new_slots('23', '34', 'Normal'); END;
+BEGIN new_slots('12', '34', 'Weird'); END;
+
+BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+
+---------------------------------------------- Sonic Triple Bust Reverse -----------------------------------------------
+
+BEGIN new_variant('Sonic', 'Arounds & Spins', 4); END;
+
+BEGIN new_modification('Triple Bust'); END;
+BEGIN new_modification('Reverse'); END;
+
+BEGIN new_hand_orientation ('PD', 'Normal'); END;
+
+BEGIN new_slots('12', '23', 'Normal'); END;
+BEGIN new_slots('23', '34', 'Normal'); END;
+BEGIN new_slots('12', '34', 'Weird'); END;
+
+BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
