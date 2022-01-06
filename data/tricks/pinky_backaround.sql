@@ -85,3 +85,32 @@ BEGIN new_slots('34', '34', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
+
+------------------------------------------------ Pinky Backaround Riser ------------------------------------------------
+
+BEGIN new_variant('Pinky Backaround', 'Aerials', 4); END;
+
+BEGIN new_modification('Riser'); END;
+
+BEGIN new_hand_orientation ('PD', 'Normal'); END;
+
+BEGIN new_slots('34', '34', 'Normal'); END;
+
+BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+
+-------------------------------------------- Pinky Backaround Riser Reverse --------------------------------------------
+
+BEGIN new_variant('Pinky Backaround', 'Aerials', 4); END;
+
+BEGIN new_modification('Riser'); END;
+BEGIN new_modification('Reverse'); END;
+
+BEGIN new_hand_orientation ('PD', 'Normal'); END;
+
+BEGIN new_slots('34', '34', 'Normal'); END;
+
+BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
