@@ -476,3 +476,52 @@ BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
+
+---------------------------------------------------- Sonic Release -----------------------------------------------------
+
+BEGIN new_variant('Sonic', 'Aerials', 4); END;
+
+BEGIN new_modification('Release'); END;
+
+BEGIN new_hand_orientation ('PS', 'Normal'); END;
+
+BEGIN new_slots_with_mid('23', '12', '12', 'Normal'); END;
+BEGIN new_slots_with_mid('23', '12', '23', 'Normal'); END;
+BEGIN new_slots_with_mid('23', '12', '34', 'Weird'); END;
+BEGIN new_slots_with_mid('23', '12', 'TF', 'Normal'); END;
+BEGIN new_slots_with_mid('34', '23', '12', 'Normal'); END;
+BEGIN new_slots_with_mid('34', '23', '23', 'Normal'); END;
+BEGIN new_slots_with_mid('34', '23', '34', 'Normal'); END;
+BEGIN new_slots_with_mid('34', '23', 'TF', 'Weird'); END;
+
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
+
+------------------------------------------------ Sonic Release Reverse -------------------------------------------------
+
+BEGIN new_variant('Sonic', 'Aerials', 4); END;
+
+BEGIN new_modification('Release'); END;
+BEGIN new_modification('Reverse'); END;
+
+BEGIN new_hand_orientation ('PS', 'Normal'); END;
+
+BEGIN new_slots_with_mid('12', '23', '12', 'Normal'); END;
+BEGIN new_slots_with_mid('12', '23', '23', 'Normal'); END;
+BEGIN new_slots_with_mid('12', '23', '34', 'Weird'); END;
+BEGIN new_slots_with_mid('12', '23', 'TF', 'Normal'); END;
+BEGIN new_slots_with_mid('23', '34', '12', 'Normal'); END;
+BEGIN new_slots_with_mid('23', '34', '23', 'Normal'); END;
+BEGIN new_slots_with_mid('23', '34', '34', 'Normal'); END;
+BEGIN new_slots_with_mid('23', '34', 'TF', 'Weird'); END;
+
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;

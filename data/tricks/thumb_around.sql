@@ -582,4 +582,104 @@ BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
 
-COMMIT;
+------------------------------------------------- Thumb Around Release -------------------------------------------------
+
+BEGIN new_variant('Thumb Around', 'Aerials', 3); END;
+
+BEGIN new_modification('Release'); END;
+
+BEGIN new_hand_orientation ('PS', 'Normal'); END;
+
+BEGIN new_slots('12', '12', 'Normal'); END;
+BEGIN new_slots('12', 'TF', 'Normal'); END;
+BEGIN new_slots('23', '12', 'Normal'); END;
+BEGIN new_slots('23', 'TF', 'Normal'); END;
+BEGIN new_slots('34', '12', 'Weird'); END;
+BEGIN new_slots('34', 'TF', 'Weird'); END;
+BEGIN new_slots('T1', '12', 'Normal'); END;
+BEGIN new_slots('T1', 'TF', 'Normal'); END;
+BEGIN new_slots('T2', '12', 'Normal'); END;
+BEGIN new_slots('T2', 'TF', 'Normal'); END;
+BEGIN new_slots('T3', '12', 'Normal'); END;
+BEGIN new_slots('T3', 'TF', 'Normal'); END;
+BEGIN new_slots('T4', '12', 'Weird'); END;
+BEGIN new_slots('T4', 'TF', 'Weird'); END;
+
+BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
+
+--------------------------------------------- Thumb Around Release Reverse ---------------------------------------------
+
+BEGIN new_variant('Thumb Around', 'Aerials', 4); END;
+
+BEGIN new_modification('Release'); END;
+BEGIN new_modification('Reverse'); END;
+
+BEGIN new_hand_orientation ('PS', 'Normal'); END;
+
+BEGIN new_slots('T1', 'T1', 'Normal'); END;
+BEGIN new_slots('T1', 'TF', 'Normal'); END;
+BEGIN new_slots('TF', 'T1', 'Normal'); END;
+BEGIN new_slots('TF', 'TF', 'Normal'); END;
+
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
+
+-------------------------------------------------- Thumb Around Riser --------------------------------------------------
+
+BEGIN new_variant('Thumb Around', 'Aerials', 4); END;
+
+BEGIN new_modification('Riser'); END;
+
+BEGIN new_hand_orientation ('PS', 'Normal'); END;
+
+BEGIN new_slots('12', '12', 'Normal'); END;
+BEGIN new_slots('12', 'TF', 'Normal'); END;
+BEGIN new_slots('23', '12', 'Normal'); END;
+BEGIN new_slots('23', 'TF', 'Normal'); END;
+BEGIN new_slots('34', '12', 'Weird'); END;
+BEGIN new_slots('34', 'TF', 'Weird'); END;
+BEGIN new_slots('T1', '12', 'Normal'); END;
+BEGIN new_slots('T1', 'TF', 'Normal'); END;
+BEGIN new_slots('T2', '12', 'Normal'); END;
+BEGIN new_slots('T2', 'TF', 'Normal'); END;
+BEGIN new_slots('T3', '12', 'Normal'); END;
+BEGIN new_slots('T3', 'TF', 'Normal'); END;
+BEGIN new_slots('T4', '12', 'Weird'); END;
+BEGIN new_slots('T4', 'TF', 'Weird'); END;
+
+BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
+
+---------------------------------------------- Thumb Around Riser Reverse ----------------------------------------------
+
+BEGIN new_variant('Thumb Around', 'Aerials', 4); END;
+
+BEGIN new_modification('Riser'); END;
+BEGIN new_modification('Reverse'); END;
+
+BEGIN new_hand_orientation ('PS', 'Normal'); END;
+
+BEGIN new_slots('T1', 'T1', 'Normal'); END;
+BEGIN new_slots('T1', 'TF', 'Normal'); END;
+BEGIN new_slots('TF', 'T1', 'Normal'); END;
+BEGIN new_slots('TF', 'TF', 'Normal'); END;
+
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
