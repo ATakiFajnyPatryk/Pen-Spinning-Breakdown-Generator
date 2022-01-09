@@ -44,11 +44,11 @@ CREATE TABLE pen_positions (
 CREATE TABLE slots (
     id NUMBER(6, 0) NOT NULL REFERENCES variant (id),
     beg_slot VARCHAR(3) NOT NULL CHECK (beg_slot IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF',
-                                                     'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34')),
+                                                     'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34', 'AF', '1', '2', '3', '4')),
     mid_slot VARCHAR(3) CHECK (mid_slot IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF',
-                                                     'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34')),
+                                                     'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34', 'AF', '1', '2', '3', '4')),
     end_slot VARCHAR(3) CHECK (end_slot IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF',
-                                            'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34')),
+                                            'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34', 'AF', '1', '2', '3', '4')),
     normality VARCHAR2(6) NOT NULL CHECK (normality IN ('Normal', 'Weird')),
     CONSTRAINT mid_exists_only_if_end_exists CHECK (end_slot IS NOT NULL OR mid_slot IS NULL)
 );
@@ -61,9 +61,9 @@ CREATE TABLE hand_orientation (
 
 CREATE TABLE replaceable_slots (
     slot_from VARCHAR(3) NOT NULL CHECK (slot_from IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF',
-                                                       'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34')),
+                                                       'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34', 'AF', '1', '2', '3', '4')),
     slot_to VARCHAR(3) NOT NULL CHECK (slot_to IN ('12', '13', '14', '23', '24', '34', 'T1', 'T2', 'T3', 'T4', 'TF',
-                                                   'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34'))
+                                                   'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34', 'AF', '1', '2', '3', '4', 'T'))
 );
 
 CREATE TABLE variant_in_combo (
