@@ -36,8 +36,8 @@ CREATE TABLE modification (
 
 CREATE TABLE pen_positions (
     id NUMBER(6, 0) NOT NULL REFERENCES variant (id),
-    beg_position VARCHAR2(8) NOT NULL CHECK (beg_position IN ('low', 'mid-low', 'mid', 'mid-high', 'high', 'lying')),
-    end_position VARCHAR2(8) NOT NULL CHECK (end_position IN ('low', 'mid-low', 'mid', 'mid-high', 'high', 'lying')),
+    beg_position VARCHAR2(8) NOT NULL CHECK (beg_position IN ('low', 'mid-low', 'mid', 'mid-high', 'high')),
+    end_position VARCHAR2(8) NOT NULL CHECK (end_position IN ('low', 'mid-low', 'mid', 'mid-high', 'high')),
     normality VARCHAR2(6) NOT NULL CHECK (normality IN ('Normal', 'Weird'))
 );
 
