@@ -56,7 +56,7 @@ W pliku data/insert_modifiers.sql wypełniamy tabelę modifier, a w pliku data/i
 
 W folderze data/tricks znajdują się pliki dodające dane o trikach i ich wariantach. Nie polecam ich analizować, bo bywają bardzo długie i nic specjalnego się w nich nie dzieje.
 
-Wszystkie te pliki mogą się jeszcze znacząco zmienić. W szczególności będę dodawał nowe triki, bo ich więcej, tym lepiej.
+Wszystkie te pliki mogą się jeszcze znacząco zmienić. W szczególności będę dodawał nowe triki, bo im ich więcej, tym lepiej.
 
 ### Świat w projekcie a świat prawdziwy
 
