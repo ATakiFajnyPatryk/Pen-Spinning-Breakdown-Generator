@@ -54,7 +54,7 @@ W pliku create_insertion_helpers.sql zdefiniowane są funkcję ułatwiające ins
 
 W pliku data/insert_modifiers.sql wypełniamy tabelę modifier, a w pliku data/insert_replaceable_slots.sql wypełniamy tabelę replaceable_slots.
 
-W folderze data/tricks znajdują się pliki dodające dane o trikach i ich wariantach. Nie polecam ich analizować, bo są bardzo długie i nieciekawe.
+W folderze data/tricks znajdują się pliki dodające dane o trikach i ich wariantach. Nie polecam ich analizować, bo bywają bardzo długie i nic specjalnego się w nich nie dzieje.
 
 Wszystkie te pliki mogą się jeszcze znacząco zmienić. W szczególności będę dodawał nowe triki, bo ich więcej, tym lepiej.
 
