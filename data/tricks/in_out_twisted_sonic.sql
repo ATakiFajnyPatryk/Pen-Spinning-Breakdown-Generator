@@ -1,6 +1,6 @@
 --############################################## IN OUT TWISTED SONIC ################################################--
 
-INSERT INTO trick (name, acronym, normality) VALUES ('In Out Twisted Sonic', NULL, 'Normal');
+INSERT INTO trick (name, acronym, normality) VALUES ('In Out Twisted Sonic', 'In Out TW Sonic', 'Normal');
 
 ------------------------------------------------ In Out Twisted Sonic --------------------------------------------------
 
