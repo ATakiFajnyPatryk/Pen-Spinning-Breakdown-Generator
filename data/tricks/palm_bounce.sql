@@ -27,7 +27,7 @@ BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
 
 -------------------------------------------------- Palm Bounce Reverse -------------------------------------------------
 
-BEGIN new_variant('Backhand Bounce', 'Weirdos', 4); END;
+BEGIN new_variant('Palm Bounce', 'Weirdos', 4); END;
 
 BEGIN new_modification('Reverse'); END;
 
