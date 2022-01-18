@@ -228,6 +228,9 @@ BEGIN new_slots('TF', 'TF', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
 
 --------------------------------------------- Double Fingerless Thumb Around -------------------------------------------
 
@@ -246,6 +249,9 @@ BEGIN new_slots('TF', 'TF', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
 
 --------------------------------------------- Triple Fingerless Thumb Around -------------------------------------------
 
@@ -264,6 +270,9 @@ BEGIN new_slots('TF', 'TF', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
 
 -------------------------------------------- Fingerless Thumb Around Reverse -------------------------------------------
 
@@ -285,6 +294,9 @@ BEGIN new_slots('TF', '12', 'Normal'); END;
 BEGIN new_slots('TF', '23', 'Normal'); END;
 BEGIN new_slots('TF', '34', 'Weird'); END;
 
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
@@ -310,6 +322,9 @@ BEGIN new_slots('TF', '12', 'Normal'); END;
 BEGIN new_slots('TF', '23', 'Normal'); END;
 BEGIN new_slots('TF', '34', 'Weird'); END;
 
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
@@ -335,6 +350,9 @@ BEGIN new_slots('TF', '12', 'Normal'); END;
 BEGIN new_slots('TF', '23', 'Normal'); END;
 BEGIN new_slots('TF', '34', 'Weird'); END;
 
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
@@ -526,6 +544,9 @@ BEGIN new_slots_with_mid('TF', 'TF', 'TF', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'mid-high', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
 
 ---------------------------------------- Fingerless Thumb Around Harmonic Reverse --------------------------------------
 
@@ -545,6 +566,9 @@ BEGIN new_slots_with_mid('TF', 'TF', 'TF', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-low', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid', 'Normal'); END;
+BEGIN new_pen_positions('mid', 'mid-high', 'Normal'); END;
 
 --------------------------------------------- Extended Thumb Around Harmonic -------------------------------------------
 
