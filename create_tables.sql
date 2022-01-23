@@ -67,9 +67,11 @@ CREATE TABLE replaceable_slots (
 );
 
 CREATE TABLE variant_in_combo (
-    combo_id NUMBER(6, 0) NOT NULL,
-    variant_id NUMBER(6, 0) NOT NULL REFERENCES variant,
-    position NUMBER(2, 0) NOT NULL,
+    combo_id NUMBER(9, 0) NOT NULL,
+    position NUMBER(2, 0) NOT NULL CHECK (position >= 1 AND position <= 20),
+    full_name VARCHAR2(50) NOT NULL,
+    full_slots VARCHAR2(12) NOT NULL,
+    hand_orientation CHAR(2) NOT NULL CHECK (hand_orientation IN ('PU', 'PS', 'PD', 'BS')),
     CONSTRAINT trick_in_combo_pk PRIMARY KEY (combo_id, position)
 );
 
@@ -86,5 +88,25 @@ BEGIN
   SELECT variant_id_seq.nextval INTO :NEW.id FROM dual;
 END;
 /
+
+CREATE OR REPLACE TRIGGER max_number_of_saved_combos
+AFTER INSERT ON variant_in_combo
+DECLARE
+    max_combo_id NUMBER;
+BEGIN
+    SELECT MAX(combo_id) INTO max_combo_id FROM variant_in_combo;
+    DELETE FROM variant_in_combo WHERE max_combo_id - combo_id >= 10000;
+END;
+
+CREATE OR REPLACE TRIGGER decrease_combo_ids
+AFTER INSERT ON variant_in_combo
+DECLARE
+    max_combo_id NUMBER;
+BEGIN
+    SELECT MAX(combo_id) INTO max_combo_id FROM variant_in_combo;
+    IF max_combo_id = 110000 THEN
+        UPDATE variant_in_combo SET combo_id = combo_id - 100000 WHERE combo_id >= 100000;
+    END IF;
+END;
 
 COMMIT;
