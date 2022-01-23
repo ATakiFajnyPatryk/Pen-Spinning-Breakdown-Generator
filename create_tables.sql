@@ -67,7 +67,7 @@ CREATE TABLE replaceable_slots (
 );
 
 CREATE TABLE variant_in_combo (
-    combo_id NUMBER(9, 0) NOT NULL,
+    combo_id NUMBER(6, 0) NOT NULL,
     position NUMBER(2, 0) NOT NULL CHECK (position >= 1 AND position <= 20),
     full_name VARCHAR2(50) NOT NULL,
     full_slots VARCHAR2(12) NOT NULL,
