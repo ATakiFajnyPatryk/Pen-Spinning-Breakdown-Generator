@@ -4,7 +4,7 @@ INSERT INTO trick (name, acronym, normality) VALUES ('Seasick', NULL, 'Weird');
 
 ------------------------------------------------------- Seasick --------------------------------------------------------
 
-BEGIN new_variant('Swing', 'Weirdos', 2); END;
+BEGIN new_variant('Seasick', 'Weirdos', 2); END;
 
 BEGIN new_hand_orientation ('PS', 'Normal'); END;
 
@@ -20,7 +20,7 @@ BEGIN new_pen_positions('high', 'mid-low', 'Normal'); END;
 
 --------------------------------------------------- Seasick Reverse ----------------------------------------------------
 
-BEGIN new_variant('Swing', 'Weirdos', 2); END;
+BEGIN new_variant('Seasick', 'Weirdos', 2); END;
 
 BEGIN new_modification('Reverse'); END;
 

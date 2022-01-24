@@ -1,4 +1,4 @@
-DROP TABLE variant_in_combo;
+-- DROP TABLE variant_in_combo;
 DROP TABLE replaceable_slots;
 DROP TABLE pen_positions;
 DROP TABLE slots;
@@ -66,14 +66,14 @@ CREATE TABLE replaceable_slots (
                                                    'P', 'B', 'T12', 'T13', 'T14', 'T23', 'T24', 'T34', 'AF', '1', '2', '3', '4', 'T'))
 );
 
-CREATE TABLE variant_in_combo (
-    combo_id NUMBER(6, 0) NOT NULL,
-    position NUMBER(2, 0) NOT NULL CHECK (position >= 1 AND position <= 20),
-    full_name VARCHAR2(50) NOT NULL,
-    full_slots VARCHAR2(12) NOT NULL,
-    hand_orientation CHAR(2) NOT NULL CHECK (hand_orientation IN ('PU', 'PS', 'PD', 'BS')),
-    CONSTRAINT trick_in_combo_pk PRIMARY KEY (combo_id, position)
-);
+--CREATE TABLE variant_in_combo (
+--    combo_id NUMBER(6, 0) NOT NULL,
+--    position NUMBER(2, 0) NOT NULL CHECK (position >= 1 AND position <= 20),
+--    full_name VARCHAR2(50) NOT NULL,
+--    full_slots VARCHAR2(12) NOT NULL,
+--    hand_orientation CHAR(2) NOT NULL CHECK (hand_orientation IN ('PU', 'PS', 'PD', 'BS')),
+--    CONSTRAINT trick_in_combo_pk PRIMARY KEY (combo_id, position)
+--);
 
 DROP SEQUENCE variant_id_seq;
 

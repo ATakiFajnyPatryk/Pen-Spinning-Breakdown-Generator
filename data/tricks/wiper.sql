@@ -48,6 +48,8 @@ BEGIN new_pen_positions('high', 'low', 'Normal'); END;
 
 BEGIN new_variant('Wiper', 'Wipers', 2); END;
 
+BEGIN new_modification('Harmonic'); END;
+
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 BEGIN new_hand_orientation ('PS', 'Normal'); END;
 
@@ -67,6 +69,9 @@ BEGIN new_pen_positions('low', 'low', 'Normal'); END;
 ----------------------------------------------- Wiper Harmonic Reverse -------------------------------------------------
 
 BEGIN new_variant('Wiper', 'Wipers', 2); END;
+
+BEGIN new_modification('Harmonic'); END;
+BEGIN new_modification('Reverse'); END;
 
 BEGIN new_hand_orientation ('PD', 'Normal'); END;
 BEGIN new_hand_orientation ('PS', 'Normal'); END;

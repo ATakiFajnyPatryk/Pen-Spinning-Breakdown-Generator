@@ -24,8 +24,8 @@ BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'high', 'Weird'); END;
-BEGIN new_pen_positions('low', 'high', 'Weird'); END;
-BEGIN new_pen_positions('high', 'low', 'Weird'); END;
+BEGIN new_pen_positions('low', 'high', 'Normal'); END;
+BEGIN new_pen_positions('high', 'low', 'Normal'); END;
 BEGIN new_pen_positions('high', 'mid-low', 'Weird'); END;
 
 ----------------------------------------------------- Pass Reverse -----------------------------------------------------
@@ -52,6 +52,6 @@ BEGIN new_pen_positions('mid-high', 'mid-low', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid', 'Normal'); END;
 BEGIN new_pen_positions('mid-high', 'mid-high', 'Normal'); END;
 BEGIN new_pen_positions('mid-low', 'high', 'Weird'); END;
-BEGIN new_pen_positions('low', 'high', 'Weird'); END;
-BEGIN new_pen_positions('high', 'low', 'Weird'); END;
+BEGIN new_pen_positions('low', 'high', 'Normal'); END;
+BEGIN new_pen_positions('high', 'low', 'Normal'); END;
 BEGIN new_pen_positions('high', 'mid-low', 'Weird'); END;
