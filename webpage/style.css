@@ -323,3 +323,8 @@ a.subpage-link:hover
   text-decoration: none;
   color: white;
 }
+
+.youtube-link:hover
+{
+  color: #3117b3;
+}
