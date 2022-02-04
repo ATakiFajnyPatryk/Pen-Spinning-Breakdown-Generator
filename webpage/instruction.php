@@ -227,7 +227,7 @@
 
     <ul type="disc">
       <?php
-        $conn = oci_connect("pj429285", "Kyrtap01", "//labora.mimuw.edu.pl/LABS");
+        $conn = oci_connect("pj429285", "********", "//labora.mimuw.edu.pl/LABS");
 
         if (!$conn) {
           echo "oci_connect failed\n";
