@@ -1,0 +1,325 @@
+body
+{
+  background-color: #303030;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.float-left-stop
+{
+  clear: both;
+}
+
+#container
+{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#left-container
+{
+  float: left;
+  width: 50%;
+}
+
+#set-parameters
+{
+  font-size: 33px;
+  color: #85bcff;
+}
+
+#right-container
+{
+  float: left;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+#title
+{
+  font-size: 76px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+a.main-page-link
+{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+a.main-page-link:hover
+{
+  color: #3117b3;
+}
+
+.row
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#generate-div
+{
+  margin-left: 170px;
+}
+
+#generate
+{
+  font-size: 60px;
+  background-color: #6583fc;
+  border-width: 2px;
+  border-color: white;
+  margin-top: 30px;
+  border-radius: 7px;
+}
+
+#generate:hover
+{
+  background-color: #3117b3;
+  border-color: black;
+}
+
+#generated-combination-div
+{
+  margin-top: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 30px;
+  border-color: white;
+}
+
+.radio_row
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#tricks {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.subpage-tile
+{
+  margin-top: 60px;
+}
+
+a.subpage-link
+{
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 350px;
+  height: 70px;
+  background-color: #6583fc;
+  font-size: 60px;
+  text-align: center;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 7px;
+}
+
+a.subpage-link:hover
+{
+  background-color: #3117b3;
+  border-color: black;
+}
+
+#save-div
+{
+  margin-top: 81px;
+  margin-left: -200px;
+  float: left;
+}
+
+#save
+{
+  font-size: 60px;
+  background-color: #6583fc;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 7px;
+}
+
+#save:hover
+{
+  background-color: #3117b3;
+  border-color: black;
+}
+
+#save-info
+{
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 25px;
+  border-color: white;
+  margin-top: 80px;
+  margin-left: -20px;
+  width: 250px;
+  height: 25px;
+  font-size: 18px;
+}
+
+#list-of-tricks
+{
+  font-size: 60px;
+  color: #85bcff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list-fieldset
+{
+  float: left;
+  width: 31%;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.list-options
+{
+  height: 205px;
+}
+
+#list-tricks
+{
+  font-size: 60px;
+  background-color: #6583fc;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 8px;
+  width: 350px;
+}
+
+#list-tricks:hover
+{
+  background-color: #3117b3;
+  border-color: black;
+}
+
+#list-tricks-div
+{
+  margin-left: 420px;
+  width: 300px;
+  margin-top: 40px;
+}
+
+#back-to-main
+{
+  float: left;
+  margin-top: 40px;
+  margin-left: 170px;
+}
+
+#printed-list
+{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 350px;
+  margin-right: 350px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#instruction-title
+{
+  font-size: 70px;
+  color: #85bcff;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.instruction-subtitle
+{
+  font-size: 40px;
+  color: #85bcff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.instruction-li
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.span-li
+{
+  color: #85bcff;
+}
+
+.none-list
+{
+  list-style: none;
+}
+
+#breakdowns-title
+{
+  font-size: 60px;
+  color: #85bcff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.breakdowns-fieldset
+{
+  float: left;
+  width: 31%;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.breakdowns-parameter
+{
+  font-size: 18px;
+}
+
+.breakdowns-options
+{
+  height: 160px;
+}
+
+#list-breakdowns
+{
+  font-size: 40px;
+  background-color: #6583fc;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 8px;
+  width: 350px;
+  height: 70px;
+}
+
+#list-breakdowns:hover
+{
+  background-color: #3117b3;
+  border-color: black;
+}
+
+#list-breakdowns-div
+{
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.youtube-link
+{
+  text-decoration: none;
+  color: white;
+}
